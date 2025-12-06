@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshua Martinez – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Joshua Martinez, a multidisciplinary designer & visual problem solver focused on branding, identity, and visual systems.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-mark">
+        <span class="logo-dot"></span>
+      </div>
+      <nav class="main-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Joshua Martinez</h1>
+          <h2>Multidisciplinary Designer &amp; Visual Problem Solver</h2>
+          <p>
+            I create brand identities, visual systems, and digital layouts that balance structure, clarity, and character.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3 class="section-title">Selected Work</h3>
+        <div class="project-grid">
+
+          <!-- PROJECT 1 -->
+          <a href="project-testudo.html" class="project-card">
+            <div class="project-thumb">
+              <img src="assets/testudo-cover.jpg" alt="Testudo Defense Solution brand identity">
+            </div>
+            <div class="project-meta">
+              <h4>Testudo Defense Solution</h4>
+              <p>Brand Identity · Visual System</p>
+            </div>
+          </a>
+
+          <!-- PROJECT 2 -->
+          <a href="project-triton.html" class="project-card">
+            <div class="project-thumb">
+              <img src="assets/triton-cover.jpg" alt="Triton Energy branding and identity">
+            </div>
+            <div class="project-meta">
+              <h4>Triton Energy</h4>
+              <p>Brand Identity · Layout Design</p>
+            </div>
+          </a>
+
+          <!-- PROJECT 3 -->
+          <a href="project-web.html" class="project-card">
+            <div class="project-thumb">
+              <img src="assets/web-cover.jpg" alt="Web interface design concept">
+            </div>
+            <div class="project-meta">
+              <h4>Interface Concept</h4>
+              <p>Web Layout · UI Exploration</p>
+            </div>
+          </a>
+
+          <!-- PROJECT 4 -->
+          <a href="project-stationery.html" class="project-card">
+            <div class="project-thumb">
+              <img src="assets/stationery-cover.jpg" alt="Stationery and print collateral design">
+            </div>
+            <div class="project-meta">
+              <h4>Stationery &amp; Collateral</h4>
+              <p>Print · Systems · Application</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container narrow">
+        <h3 class="section-title">About</h3>
+        <p>
+          I’m a graphic designer focused on branding, visual identity, and clear communication.
+          I enjoy building systems: logos, grids, type hierarchies, and layouts that feel intentional and grounded.
+        </p>
+        <p>
+          My work spans brand identities, web layouts, and stationery systems, always with an emphasis on structure,
+          readability, and problem-solving over decoration.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container narrow">
+        <h3 class="section-title">Contact</h3>
+        <p>
+          For work opportunities, collaborations, or questions, you can reach me at:
+        </p>
+        <p class="contact-line">
+          <a href="mailto:Joshuadavid0119@gmail.com">Joshuadavid0119@gmail.com</a>
+        </p>
+        <p class="contact-line">
+          <a href="https://www.behance.net/JoshuaMR95" target="_blank" rel="noopener noreferrer">Behance · JoshuaMR95</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joshua Martinez. All rights reserved.</p>
+    </div>
+    <script>
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
