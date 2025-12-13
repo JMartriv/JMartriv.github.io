@@ -472,3 +472,37 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* TITAN-SLAYER IMAGE RULES */
+.project-hero-media,
+.project-figure {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-hero-image {
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.project-image {
+  width: 100% !important;
+  max-width: 900px !important;
+  height: auto !important;
+  max-height: 70vh;       /* stops skyscraper images */
+  object-fit: contain;
+  display: block;
+}
+
+/* Keep gallery columns sane */
+.project-gallery--two,
+.project-gallery--three {
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .project-hero-image { max-width: 100% !important; }
+}
