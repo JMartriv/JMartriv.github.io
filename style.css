@@ -422,3 +422,52 @@ body {
   font-size: 0.8rem;
   color: #777;
 }
+/* ===============================
+   IMAGE CONSTRAINTS (ANTI-HERESY)
+   =============================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Project hero image */
+.project-hero-image {
+  max-width: 480px;
+  width: 100%;
+}
+
+/* Project images inside case studies */
+.project-image {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Project galleries */
+.project-gallery {
+  display: grid;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.project-gallery--single {
+  grid-template-columns: 1fr;
+}
+
+.project-gallery--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-gallery--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Mobile discipline */
+@media (max-width: 900px) {
+  .project-gallery--two,
+  .project-gallery--three {
+    grid-template-columns: 1fr;
+  }
+}
