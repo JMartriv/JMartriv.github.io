@@ -1,4 +1,4 @@
-body { background: #ff00ff !important; }
+
 /* Base */
 
 *,
@@ -505,4 +505,146 @@ img {
 
 @media (max-width: 900px) {
   .project-hero-image { max-width: 100% !important; }
+}
+/* ===============================
+   PROJECT PAGE LAYOUT (FIX)
+   =============================== */
+
+.project-page {
+  padding-bottom: 4rem;
+}
+
+.project-hero {
+  padding: 3.5rem 0 2rem;
+}
+
+.project-hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.project-hero-text .project-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #777;
+  margin: 0 0 0.75rem;
+}
+
+.project-title {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.project-intro {
+  max-width: 58ch;
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0 0 1.25rem;
+}
+
+.project-meta-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-meta-item h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #777;
+  margin: 0 0 0.35rem;
+}
+
+.project-meta-item p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.project-hero-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-hero-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* Sections */
+.project-section {
+  padding: 3rem 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.project-section-alt {
+  background: #fafafa;
+}
+
+.project-section-header h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.project-section-header p {
+  margin: 0;
+  max-width: 70ch;
+  color: #444;
+}
+
+/* Gallery captions */
+.project-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Nav + links */
+.site-nav .nav-link {
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #555;
+  margin-left: 1.5rem;
+}
+
+.site-nav .nav-link:hover {
+  color: #000;
+}
+
+.button-link {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #111;
+  border-bottom: 1px solid #bbb;
+}
+
+.button-link:hover {
+  border-bottom-color: #111;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .project-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero-media {
+    justify-content: flex-start;
+  }
+
+  .project-meta-row {
+    grid-template-columns: 1fr;
+  }
 }
