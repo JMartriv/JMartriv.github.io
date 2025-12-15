@@ -648,3 +648,14 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* SYSTEM SECTIONS — consistent scale */
+.project-figure {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.project-gallery--two {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 3rem;
+}
