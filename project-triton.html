@@ -6,57 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-  <!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
-  <img class="lightbox-img" alt="">
-</div>
 
-<script>
-  (function () {
-    const box = document.getElementById("lightbox");
-    const boxImg = box.querySelector(".lightbox-img");
-    const closeBtn = box.querySelector(".lightbox-close");
-
-    function openLightbox(src, alt) {
-      boxImg.src = src;
-      boxImg.alt = alt || "";
-      box.classList.add("is-open");
-      box.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      box.classList.remove("is-open");
-      box.setAttribute("aria-hidden", "true");
-      boxImg.src = "";
-      document.body.style.overflow = "";
-    }
-
-    document.addEventListener("click", (e) => {
-      const img = e.target.closest("img.zoomable");
-if (!img) return;
-
-
-      e.preventDefault();
-      openLightbox(img.src, img.alt);
-    });
-
-    closeBtn.addEventListener("click", closeLightbox);
-    box.addEventListener("click", (e) => {
-      if (e.target === box) closeLightbox(); // click outside image closes
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeLightbox();
-    });
-  })();
-</script>
-  <!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
-  <img class="lightbox-img" alt="">
-</div>
 <body>
 
   <!-- SITE HEADER -->
@@ -78,144 +28,198 @@ if (!img) return;
     <section class="project-hero">
       <div class="container project-hero-inner">
         <div class="project-hero-text">
-          <p class="project-label">Brand Identity · Layout System</p>
+          <p class="project-label">Brand Identity · Visual System</p>
           <h1 class="project-title">Triton Energy</h1>
-          <p class="project-intro">
-            The Triton Energy identity is built around clarity and structure. The system emphasizes balance between natural forces and engineered solutions, 
-            using restrained typography, a disciplined grid, and a muted color palette to convey trust, longevity, and scale.
 
+          <p class="project-description">
+            Triton Energy is a renewable energy brand concept centered on hydroelectric power—designed to feel
+            trustworthy, refined, and rooted in mythic symbolism without becoming decorative.
           </p>
+
           <div class="project-meta-row">
-            <div class="project-meta-item">
-              <h3>Role</h3>
-              <p>Brand identity, visual system, layout design</p>
+            <div class="project-meta-block">
+              <p class="project-meta-label">Role</p>
+              <p class="project-meta-value">Brand identity, visual system, applications</p>
             </div>
-            <div class="project-meta-item">
-              <h3>Deliverables</h3>
-              <p>Primary &amp; secondary logos, grid system, typography &amp; color, stationery, ID system, signage</p>
+            <div class="project-meta-block">
+              <p class="project-meta-label">Deliverables</p>
+              <p class="project-meta-value">Primary/secondary logo, typography & color, brand assets, mockups</p>
             </div>
           </div>
         </div>
 
         <div class="project-hero-media">
-          <img src="assets/testudo/testudo-hero.jpg"
-               alt="Testudo Defense Solution logo on a clean white background"
-               class="project-hero-image zoomable">
+          <!-- Swap filename to whatever you actually used -->
+          <img
+            src="assets/triton/triton-hero.jpg"
+            alt="Triton Energy brand introduction board"
+            class="project-hero-image zoomable">
         </div>
       </div>
     </section>
 
     <!-- SECTION: LOGO CONCEPT & CONSTRUCTION -->
-    <section class="project-section">
-      <div class="container">
-        <div class="project-section-header">
-          <h2>Logo Concept &amp; Construction</h2>
-          <p>
-          </p>
-        </div>
-
-        <div class="project-gallery project-gallery--two">
-          <figure class="project-figure">
-            <img src="assets/testudo/testudo-logo-grid.jpg"
-                 alt="Testudo logo grid construction with dashed guidelines"
-                 class="project-image zoomable">
-            <figcaption>
-              Grid-based construction keeps the mark precise and reproducible across formats.
-            </figcaption>
-          </figure>
-
-          <figure class="project-figure">
-            <img src="assets/testudo/testudo-logo-variations.jpg"
-                 alt="Testudo logo variations on different background colors"
-                 class="project-image zoomable">
-            <figcaption>
-              Primary, reversed, and monochrome versions provide flexibility for print, digital, and product use.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: TYPOGRAPHY & COLOR -->
     <section class="project-section project-section-alt">
       <div class="container">
         <div class="project-section-header">
-          <h2>Typography &amp; Color System</h2>
+          <h2>Logo Concept & Construction</h2>
           <p>
-            The identity combines a classic serif wordmark with a clean grotesque typeface for functional text.
-            The palette balances a strong red signalling urgency and protection with neutral greys to keep the
-            system grounded and professional.
+            The identity draws from Triton/Poseidon symbolism—trident + waves—translated into a clean, modern mark.
           </p>
         </div>
 
+        <!-- IMPORTANT: keep this mostly visual; your text is already inside images -->
         <div class="project-gallery project-gallery--two">
-  <figure class="project-figure">
-    <img src="assets/testudo/testudo-typography.jpg"
-         alt="Testudo typography system"
-         class="project-image zoomable">
-    <figcaption>Primary and supporting typefaces.</figcaption>
-  </figure>
 
-  <figure class="project-figure">
-    <img src="assets/testudo/testudo-color-palette.jpg"
-         alt="Testudo color palette"
-         class="project-image zoomable">
-    <figcaption>Core color palette and usage.</figcaption>
-  </figure>
-</div>
+          <figure class="project-figure">
+            <img
+              src="assets/triton/triton-concept.jpg"
+              alt="Triton Energy concept exploration showing Poseidon, wave reference, and mark rationale"
+              class="project-image zoomable">
+          </figure>
+
+          <figure class="project-figure">
+            <img
+              src="assets/triton/triton-variations.jpg"
+              alt="Triton Energy logo variations on different backgrounds"
+              class="project-image zoomable">
+          </figure>
+
+        </div>
       </div>
     </section>
 
-    <!-- SECTION: APPLICATIONS -->
+    <!-- SECTION: TYPOGRAPHY & COLOR SYSTEM -->
     <section class="project-section">
+      <div class="container">
+        <div class="project-section-header">
+          <h2>Typography & Color System</h2>
+          <p>
+            A classic serif voice paired with a deep ocean palette to support a premium, stable, environmental tone.
+          </p>
+        </div>
+
+        <!-- Side-by-side, like you wanted -->
+        <div class="project-gallery project-gallery--two">
+
+          <figure class="project-figure">
+            <img
+              src="assets/triton/triton-typography.jpg"
+              alt="Triton Energy typography specification"
+              class="project-image zoomable">
+          </figure>
+
+          <figure class="project-figure">
+            <img
+              src="assets/triton/triton-color.jpg"
+              alt="Triton Energy color palette specification"
+              class="project-image zoomable">
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: REAL-WORLD APPLICATIONS -->
+    <section class="project-section project-section-alt">
       <div class="container">
         <div class="project-section-header">
           <h2>Real-World Applications</h2>
           <p>
-            With the core system defined, the identity extends into touchpoints that feel consistent and
-            recognizable from business cards to large-scale signage.
+            Applications extend the system into practical touchpoints while keeping the identity consistent.
           </p>
         </div>
 
+        <!-- Three-up grid for smaller mockups -->
         <div class="project-gallery project-gallery--three">
+
           <figure class="project-figure">
-            <img src="assets/testudo/testudo-business-card.jpg"
-                 alt="Testudo business card and stationery layout"
-                 class="project-image zoomable">
-            <figcaption>
-              Stationery system with restrained use of red for emphasis.
-            </figcaption>
+            <img
+              src="assets/triton/triton-business-cards.jpg"
+              alt="Triton Energy business cards mockup"
+              class="project-image zoomable">
           </figure>
 
           <figure class="project-figure">
-            <img src="assets/testudo/testudo-lanyard.jpg"
-                 alt="Testudo ID badge and lanyard system"
-                 class="project-image zoomable">
-            <figcaption>
-              ID badges and lanyards extend the shield motif into everyday use.
-            </figcaption>
+            <img
+              src="assets/triton/triton-id-lanyard.jpg"
+              alt="Triton Energy ID badge and lanyard mockup"
+              class="project-image zoomable">
           </figure>
 
           <figure class="project-figure">
-            <img src="assets/testudo/testudo-container.jpg"
-                 alt="Testudo logo applied to large exterior signage and shipping containers"
-                 class="project-image zoomable">
-            <figcaption>
-              Large-scale trasnport containers demonstrate how the mark holds up at any surface.
-            </figcaption>
+            <img
+              src="assets/triton/triton-hardhat.jpg"
+              alt="Triton Energy hardhat mockup"
+              class="project-image zoomable">
+          </figure>
+
+        </div>
+
+        <!-- Big signage gets its own full-width moment -->
+        <div class="project-gallery project-gallery--single">
+          <figure class="project-figure">
+            <img
+              src="assets/triton/triton-signage.jpg"
+              alt="Triton Energy exterior signage mockup"
+              class="project-image zoomable">
           </figure>
         </div>
-      </div>
-    </section>
 
-    <!-- PROJECT FOOTER NAV -->
-    <section class="project-section project-nav">
-      <div class="container">
-        <a href="index.html#projects" class="button-link">← Back to projects</a>
+        <a class="back-link" href="index.html#projects">Back to projects</a>
       </div>
     </section>
 
   </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+    <img class="lightbox-img" alt="">
+  </div>
+
+  <script>
+    (function () {
+      const box = document.getElementById("lightbox");
+      const boxImg = box.querySelector(".lightbox-img");
+      const closeBtn = box.querySelector(".lightbox-close");
+
+      function openLightbox(src, alt) {
+        boxImg.src = src;
+        boxImg.alt = alt || "";
+        box.classList.add("is-open");
+        box.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        box.classList.remove("is-open");
+        box.setAttribute("aria-hidden", "true");
+        boxImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      document.addEventListener("click", (e) => {
+        const img = e.target.closest("img.project-image, img.project-hero-image");
+        if (!img) return;
+
+        // Only lightbox images you mark as zoomable
+        if (!img.classList.contains("zoomable")) return;
+
+        e.preventDefault();
+        openLightbox(img.src, img.alt);
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      box.addEventListener("click", (e) => {
+        if (e.target === box) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    })();
+  </script>
 
 </body>
 </html>
