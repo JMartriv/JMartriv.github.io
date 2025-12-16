@@ -2,77 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Testudo Defense Solution – Brand Identity</title>
+  <title>Eldritch Studios · Joshua Martinez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Brand identity case study for Testudo Defense Solution by Joshua Martinez.">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Minimal video embed styling -->
+  <style>
+    .video-wrap {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #eeeeee;
+      background: #000;
+    }
+    .video-aspect {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+    }
+    .video-aspect iframe,
+    .video-aspect video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- SITE HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo-mark">
-        <span class="logo-dot"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+      <a href="index.html" class="site-logo">
+        <span class="site-name">Joshua Martinez</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <!-- LIGHTBOX (for logo click-to-zoom) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+    <img class="lightbox-img" alt="">
+  </div>
+
+  <main class="project-page">
+
+    <!-- PROJECT HERO -->
     <section class="project-hero">
-      <div class="container">
-        <a href="index.html#projects" class="back-link">Back to projects</a>
-        <h1>Testudo Defense Solution</h1>
-        <p>Brand Identity · Visual System · Nonlethal Defense</p>
+      <div class="container project-hero-inner">
+        <div class="project-hero-text">
+          <p class="project-label">Brand Mark · Motion Intro</p>
+          <h1 class="project-title">Eldritch Studios</h1>
+          <p class="project-intro">
+            A fictional game studio brand concept. The goal was a mark that feels mysterious and premium,
+            with a short motion intro that sets tone without overexplaining.
+          </p>
+
+          <div class="project-meta-row">
+            <div class="project-meta-item">
+              <h3>Role</h3>
+              <p>Logo design, visual direction</p>
+            </div>
+            <div class="project-meta-item">
+              <h3>Deliverables</h3>
+              <p>Logo mark + 30s intro video</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTIONAL HERO IMAGE -->
+        <div class="project-hero-media">
+          <img
+            src="assets/eldritch/eldritch-hero.jpg"
+            alt="Eldritch Studios hero image"
+            class="project-hero-image zoomable">
+        </div>
       </div>
     </section>
 
-    <section class="project-layout">
+    <!-- SECTION: LOGO -->
+    <section class="project-section">
       <div class="container">
-
-        <div class="intro">
+        <div class="project-section-header">
+          <h2>Logo Mark</h2>
           <p>
-            Testudo Defense Solution is a nonlethal defense brand focused on protection,
-            stability, and control. The identity system uses a structural cube mark
-            and modular pattern to communicate reliability and containment without aggression.
+            A compact, high-contrast mark designed to feel cinematic and readable across digital touchpoints.
           </p>
         </div>
 
-        <div class="meta-row">
-          <div class="meta-block">
-            <h4>Role</h4>
-            <p>Brand Identity · Logo Design · Layout</p>
-          </div>
-          <div class="meta-block">
-            <h4>Scope</h4>
-            <p>Logo, pattern system, stationery, digital applications</p>
-          </div>
-          <div class="meta-block">
-            <h4>Tools</h4>
-            <p>Affinity Designer / Photo</p>
+        <div class="project-gallery project-gallery--single">
+          <figure class="project-figure">
+            <img
+              src="assets/eldritch/eldritch-logo.jpg"
+              alt="Eldritch Studios logo mark"
+              class="project-image zoomable">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: VIDEO -->
+    <section class="project-section project-section-alt">
+      <div class="container">
+        <div class="project-section-header">
+          <h2>Motion Intro</h2>
+          <p>
+            A short video intro to establish tone and atmosphere. Clean, minimal, and brand-consistent.
+          </p>
+        </div>
+
+        <!-- OPTION A: YouTube/Vimeo embed (recommended) -->
+        <div class="video-wrap">
+          <div class="video-aspect">
+            <iframe
+              src="PASTE_YOUR_VIDEO_EMBED_URL_HERE"
+              title="Eldritch Studios Intro Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
 
-        <div class="image-stack">
-          <img src="assets/testudo-cover.jpg" alt="Testudo Defense Solution primary brand identity presentation">
-          <img src="assets/testudo-1.jpg" alt="Logo variations and grid for Testudo Defense Solution">
-          <img src="assets/testudo-2.jpg" alt="Stationery and brand applications for Testudo Defense Solution">
+        <!-- OPTION B: Local MP4 (use this instead of the iframe if you host the video in your repo)
+        <div class="video-wrap">
+          <div class="video-aspect">
+            <video controls preload="metadata" poster="assets/eldritch/eldritch-poster.jpg">
+              <source src="assets/eldritch/eldritch-intro.mp4" type="video/mp4">
+              Sorry, your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+        -->
 
       </div>
     </section>
+
+    <!-- PROJECT FOOTER NAV -->
+    <section class="project-section project-nav">
+      <div class="container">
+        <a href="index.html#projects" class="button-link">← Back to projects</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Joshua Martinez. All rights reserved.</p>
-    </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
+  <script>
+    (function () {
+      const box = document.getElementById("lightbox");
+      const boxImg = box.querySelector(".lightbox-img");
+      const closeBtn = box.querySelector(".lightbox-close");
+
+      function openLightbox(src, alt) {
+        boxImg.src = src;
+        boxImg.alt = alt || "";
+        box.classList.add("is-open");
+        box.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        box.classList.remove("is-open");
+        box.setAttribute("aria-hidden", "true");
+        boxImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      document.addEventListener("click", (e) => {
+        const img = e.target.closest("img");
+        if (!img) return;
+        if (!img.classList.contains("zoomable")) return;
+        e.preventDefault();
+        openLightbox(img.src, img.alt);
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      box.addEventListener("click", (e) => {
+        if (e.target === box) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    })();
+  </script>
+
 </body>
 </html>
