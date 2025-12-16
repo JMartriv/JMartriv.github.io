@@ -701,3 +701,4 @@ img {
 
 /* Make it obvious images are zoomable */
 img.zoomable { cursor: zoom-in; }
+html { scroll-behavior: smooth; }
