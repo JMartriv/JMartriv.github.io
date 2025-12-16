@@ -2,61 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Testudo Defense Solution · Joshua Martinez</title>
+  <title>Mythos Bookstore · Joshua Martinez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-  <!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
-  <img class="lightbox-img" alt="">
-</div>
 
-<script>
-  (function () {
-    const box = document.getElementById("lightbox");
-    const boxImg = box.querySelector(".lightbox-img");
-    const closeBtn = box.querySelector(".lightbox-close");
-
-    function openLightbox(src, alt) {
-      boxImg.src = src;
-      boxImg.alt = alt || "";
-      box.classList.add("is-open");
-      box.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      box.classList.remove("is-open");
-      box.setAttribute("aria-hidden", "true");
-      boxImg.src = "";
-      document.body.style.overflow = "";
-    }
-
-    document.addEventListener("click", (e) => {
-      const img = e.target.closest("img.zoomable");
-if (!img) return;
-
-
-      e.preventDefault();
-      openLightbox(img.src, img.alt);
-    });
-
-    closeBtn.addEventListener("click", closeLightbox);
-    box.addEventListener("click", (e) => {
-      if (e.target === box) closeLightbox(); // click outside image closes
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeLightbox();
-    });
-  })();
-</script>
-  <!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
-  <img class="lightbox-img" alt="">
-</div>
 <body>
 
   <!-- SITE HEADER -->
@@ -73,67 +23,86 @@ if (!img) return;
     </div>
   </header>
 
-  <!-- PROJECT HERO -->
+  <!-- LIGHTBOX (Click-to-zoom) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+    <img class="lightbox-img" alt="">
+  </div>
+
   <main class="project-page">
+
+    <!-- PROJECT HERO -->
     <section class="project-hero">
       <div class="container project-hero-inner">
         <div class="project-hero-text">
-          <p class="project-label">Brand Identity · Visual System</p>
-          <h1 class="project-title">Testudo Defense Solution</h1>
+          <p class="project-label">Web / UI Concept</p>
+          <h1 class="project-title">Mythos Bookstore</h1>
+
           <p class="project-intro">
-            Testudo Defense Solution is a non-lethal defense company focused on protecting and preserving life.
-            The identity needed to feel serious, trustworthy, and contemporary communicating protection without
-            leaning into militaristic clichés.
+            A web interface concept for an online bookstore focused on weird fiction—horror, sci-fi, fantasy, and thrillers.
+            The goal was a clean, readable layout with clear browsing and product discovery.
           </p>
+
           <div class="project-meta-row">
             <div class="project-meta-item">
               <h3>Role</h3>
-              <p>Logo design, visual system, brand guidelines, applications</p>
+              <p>UI layout, wireframing, visual exploration</p>
             </div>
             <div class="project-meta-item">
               <h3>Deliverables</h3>
-              <p>Primary &amp; secondary logos, grid system, typography &amp; color, stationery, ID system, signage</p>
+              <p>Wireframe + high-fidelity concept screen</p>
             </div>
           </div>
         </div>
 
+        <!-- OPTIONAL HERO IMAGE
+             If you don’t have one, delete this entire <div class="project-hero-media"> block. -->
         <div class="project-hero-media">
-          <img src="assets/testudo/testudo-hero.jpg"
-               alt="Testudo Defense Solution logo on a clean white background"
-               class="project-hero-image zoomable">
+          <img
+            src="assets/mythos/mythos-hero.jpg"
+            alt="Mythos Bookstore UI concept preview"
+            class="project-hero-image zoomable"
+          >
         </div>
       </div>
     </section>
 
-    <!-- SECTION: WIREFRAME & SITE -->
+    <!-- SECTION: WIREFRAMES -->
     <section class="project-section">
       <div class="container">
         <div class="project-section-header">
-          <h2>Logo Concept &amp; Construction</h2>
-          <p>
-            The mark is based on the Roman <em>testudo</em> shield formation multiple shields locking together
-            into a single defensive structure. The cube is built from individual “shield” panels, creating a
-            sense of unity, stability, and controlled strength.
-          </p>
+          <h2>Wireframes</h2>
+          <!-- Keep text minimal because your images already contain detail -->
+          <p>Structure-first layout exploration for navigation, hierarchy, and key content blocks.</p>
         </div>
 
-        <div class="project-gallery project-gallery--two">
+        <div class="project-gallery project-gallery--single">
           <figure class="project-figure">
-            <img src="assets/testudo/testudo-logo-grid.jpg"
-                 alt="Testudo logo grid construction with dashed guidelines"
-                 class="project-image zoomable">
-            <figcaption>
-              Grid-based construction keeps the mark precise and reproducible across formats.
-            </figcaption>
+            <img
+              src="assets/mythos/mythos-wireframe.jpg"
+              alt="Mythos Bookstore wireframes"
+              class="project-image zoomable"
+            >
           </figure>
+        </div>
+      </div>
+    </section>
 
+    <!-- SECTION: UI CONCEPT -->
+    <section class="project-section project-section-alt">
+      <div class="container">
+        <div class="project-section-header">
+          <h2>UI Concept</h2>
+          <p>A visual direction pass to test typography, spacing, and overall tone.</p>
+        </div>
+
+        <div class="project-gallery project-gallery--single">
           <figure class="project-figure">
-            <img src="assets/testudo/testudo-logo-variations.jpg"
-                 alt="Testudo logo variations on different background colors"
-                 class="project-image zoomable">
-            <figcaption>
-              Primary, reversed, and monochrome versions provide flexibility for print, digital, and product use.
-            </figcaption>
+            <img
+              src="assets/mythos/mythos-concept.jpg"
+              alt="Mythos Bookstore UI concept"
+              class="project-image zoomable"
+            >
           </figure>
         </div>
       </div>
@@ -147,6 +116,47 @@ if (!img) return;
     </section>
 
   </main>
+
+  <script>
+    (function () {
+      const box = document.getElementById("lightbox");
+      const boxImg = box.querySelector(".lightbox-img");
+      const closeBtn = box.querySelector(".lightbox-close");
+
+      function openLightbox(src, alt) {
+        boxImg.src = src;
+        boxImg.alt = alt || "";
+        box.classList.add("is-open");
+        box.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        box.classList.remove("is-open");
+        box.setAttribute("aria-hidden", "true");
+        boxImg.src = "";
+        document.body.style.overflow = "";
+      }
+
+      document.addEventListener("click", (e) => {
+        const img = e.target.closest("img");
+        if (!img) return;
+        if (!img.classList.contains("zoomable")) return;
+
+        e.preventDefault();
+        openLightbox(img.src, img.alt);
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      box.addEventListener("click", (e) => {
+        if (e.target === box) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    })();
+  </script>
 
 </body>
 </html>
