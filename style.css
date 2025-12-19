@@ -1,161 +1,175 @@
-/* ---------- Base ---------- */
+/* ==========================
+   TITAN-SLAYER BASE (GLOBAL)
+   ========================== */
+
 :root{
-  --text: #161616;
-  --muted: rgba(22,22,22,.72);
-  --faint: rgba(22,22,22,.12);
-  --bg: #ffffff;
-  --card: #ffffff;
-  --radius: 14px;
-  --max: 1100px;
+  --text:#161616;
+  --muted:rgba(22,22,22,.72);
+  --faint:rgba(22,22,22,.10);
+  --bg:#ffffff;
+  --card:#ffffff;
+  --radius:14px;
+  --max:1100px;
 }
 
-*{ box-sizing: border-box; }
-html{ scroll-behavior: smooth; }
+*{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
 body{
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.5;
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.55;
 }
 
-/* ---------- Layout ---------- */
+/* GLOBAL CLAMP: nothing can exceed container width */
+img, video{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Layout */
 .container{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 24px;
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 24px;
 }
 
-/* ---------- Header ---------- */
+/* ==========================
+   HEADER (NOT FLOATING ANYMORE)
+   ========================== */
+
 .site-header{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255,255,255,.92);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,.06);
+  border-bottom:1px solid rgba(0,0,0,.06);
 }
 
 .header-inner{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:72px;
 }
 
+/* Monogram bigger */
 .site-logo{
-  text-decoration: none;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
+  text-decoration:none;
+  color:inherit;
+  display:inline-flex;
+  align-items:center;
 }
 
 .monogram{
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 650;
-  letter-spacing: .5px;
+  width:52px;
+  height:52px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:16px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:.12em;
 }
 
 .site-nav{
-  display: flex;
-  gap: 18px;
+  display:flex;
+  gap:12px;
 }
 
 .site-nav a{
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  opacity: .72;
-  padding: 10px 8px;
-  border-radius: 10px;
+  text-decoration:none;
+  color:inherit;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.75;
+  padding:10px 10px;
+  border-radius:12px;
 }
 
 .site-nav a:hover{
-  opacity: 1;
-  background: rgba(0,0,0,.04);
+  opacity:1;
+  background:rgba(0,0,0,.04);
 }
 
-/* ---------- Hero ---------- */
+/* ==========================
+   HERO (LANDING PAGE)
+   ========================== */
+
 .hero{
-  padding: 64px 0 40px;
-}
-
-.hero-inner{
-  display: grid;
-  grid-template-columns: 1fr;
+  padding:64px 0 42px;
 }
 
 .kicker{
-  margin: 0 0 10px;
-  font-size: 14px;
-  letter-spacing: .04em;
-  color: var(--muted);
+  margin:0 0 10px;
+  font-size:14px;
+  letter-spacing:.04em;
+  color:var(--muted);
 }
 
 .hero h1{
-  margin: 0 0 10px;
-  font-size: 44px;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  margin:0 0 10px;
+  font-size:44px;
+  letter-spacing:-0.02em;
+  line-height:1.12;
 }
 
 .lede{
-  margin: 0;
-  max-width: 62ch;
-  color: var(--muted);
-  font-size: 16px;
+  margin:0;
+  max-width:62ch;
+  color:var(--muted);
+  font-size:16px;
 }
 
-/* ---------- Sections ---------- */
+/* ==========================
+   SECTIONS
+   ========================== */
+
 .section-title{
-  margin: 0 0 18px;
-  font-size: 12px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: rgba(22,22,22,.55);
+  margin:0 0 18px;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(22,22,22,.55);
 }
 
-.projects{
-  padding: 18px 0 44px;
-}
-
-.about, .contact{
-  padding: 44px 0;
-}
+.projects{ padding:18px 0 48px; }
+.about, .contact{ padding:44px 0; }
 
 .text-block{
-  max-width: 70ch;
-  color: var(--muted);
+  max-width:70ch;
+  color:var(--muted);
 }
 
-.text-block p{
-  margin: 0 0 14px;
-}
+.text-block p{ margin:0 0 14px; }
 
-/* ---------- Project grid ---------- */
+/* ==========================
+   INDEX PROJECT GRID (CARDS)
+   ========================== */
+
 .project-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:18px;
 }
 
 .project-card{
-  text-decoration: none;
-  color: inherit;
-  background: var(--card);
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: var(--radius);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  text-decoration:none;
+  color:inherit;
+  background:var(--card);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:var(--radius);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
@@ -165,78 +179,229 @@ body{
   border-color: rgba(0,0,0,.12);
 }
 
+/* HARD-CONSTRAIN THUMB HEIGHT */
 .project-thumb{
   aspect-ratio: 16 / 10;
-  background: #f3f3f3;
-  overflow: hidden;
+  background:#f3f3f3;
+  overflow:hidden;
 }
 
+/* Ensure the media fills thumb area correctly */
 .project-thumb img,
 .project-thumb video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
-/* Video thumbs often render black for a split second; give it a base */
-.video-thumb{
-  background: #0b0b0b;
-}
+/* Video thumb default background avoids “black void” flashes */
+.video-thumb{ background:#0b0b0b; }
 
 .project-meta{
-  padding: 14px 14px 16px;
+  padding:14px 14px 16px;
 }
 
-.project-meta h3{
-  margin: 0 0 6px;
-  font-size: 14px;
-  font-weight: 620;
+.project-meta h3, .project-meta h4{
+  margin:0 0 6px;
+  font-size:14px;
+  font-weight:650;
 }
 
 .project-meta p{
-  margin: 0;
-  font-size: 12px;
+  margin:0;
+  font-size:12px;
+  color:rgba(22,22,22,.62);
+}
+
+/* ==========================
+   PROJECT PAGES (CASE STUDIES)
+   - This is where Titans usually spawn
+   ========================== */
+
+/* A safe wrapper so content doesn’t stretch */
+.project-page{
+  padding-bottom: 48px;
+}
+
+/* Hero section layout */
+.project-hero{
+  padding: 44px 0 24px;
+}
+
+.project-hero-inner{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+  align-items:start;
+}
+
+.project-label{
+  margin:0 0 10px;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(22,22,22,.55);
+}
+
+.project-title{
+  margin:0 0 12px;
+  font-size:30px;
+  letter-spacing:-.01em;
+}
+
+.project-intro{
+  margin:0 0 18px;
+  color:var(--muted);
+  max-width: 65ch;
+}
+
+.project-meta-row{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.project-meta-item h3{
+  margin:0 0 6px;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(22,22,22,.55);
+}
+
+.project-meta-item p{
+  margin:0;
+  font-size:14px;
+  color:rgba(22,22,22,.8);
+}
+
+/* HERO IMAGE: clamped and contained */
+.project-hero-media{
+  max-width: 520px;     /* prevents billboard hero */
+  margin-left:auto;
+}
+
+.project-hero-image{
+  width:100%;
+  height:auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,.08);
+  background:#fff;
+}
+
+/* Sections */
+.project-section{
+  padding: 28px 0;
+}
+
+.project-section-alt{
+  background: rgba(0,0,0,.02);
+  border-top: 1px solid rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.project-section-header h2{
+  margin:0 0 10px;
+  font-size:20px;
+}
+
+.project-section-header p{
+  margin:0;
+  color:var(--muted);
+  max-width: 70ch;
+}
+
+/* Galleries: sane grid */
+.project-gallery{
+  display:grid;
+  gap:18px;
+  margin-top:18px;
+}
+
+.project-gallery--single{ grid-template-columns: 1fr; }
+.project-gallery--two{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project-gallery--three{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Every figure is constrained */
+.project-figure{
+  margin:0;
+}
+
+/* THE ACTUAL TITAN KILLER: clamp gallery images */
+.project-image{
+  width:100%;
+  height:auto;
+  max-height: 70vh;          /* stops skyscrapers */
+  object-fit: contain;       /* keeps full image visible */
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,.08);
+  background:#fff;
+}
+
+/* Caption style */
+.project-figure figcaption{
+  margin-top:10px;
+  font-size:12px;
   color: rgba(22,22,22,.62);
+  line-height:1.4;
 }
 
-/* ---------- Contact ---------- */
-.contact-line{
-  margin: 10px 0 0;
+/* Back link/button (if used) */
+.button-link{
+  display:inline-block;
+  margin-top: 8px;
+  text-decoration:none;
+  color:inherit;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.8;
+  border-bottom:1px solid rgba(0,0,0,.18);
 }
 
-.contact-line a{
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0,0,0,.18);
+.button-link:hover{
+  opacity:1;
+  border-bottom-color: rgba(0,0,0,.45);
 }
 
-.contact-line a:hover{
-  border-bottom-color: rgba(0,0,0,.5);
-}
+/* ==========================
+   FOOTER
+   ========================== */
 
-/* ---------- Footer ---------- */
 .site-footer{
-  padding: 26px 0 36px;
-  border-top: 1px solid rgba(0,0,0,.06);
+  padding:26px 0 36px;
+  border-top:1px solid rgba(0,0,0,.06);
 }
 
-.footer-inner{
-  color: rgba(22,22,22,.55);
-  font-size: 12px;
+.site-footer p{
+  margin:0;
+  color:rgba(22,22,22,.55);
+  font-size:12px;
 }
 
-/* ---------- Responsive ---------- */
+/* ==========================
+   RESPONSIVE
+   ========================== */
+
 @media (max-width: 980px){
-  .project-grid{ grid-template-columns: repeat(2, 1fr); }
-  .hero h1{ font-size: 38px; }
+  .project-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero h1{ font-size:38px; }
+  .project-hero-inner{ grid-template-columns: 1fr; }
+  .project-hero-media{ max-width: 100%; margin-left:0; }
+  .project-hero-image{ max-height: 460px; }
 }
 
-@media (max-width: 520px){
-  .container{ padding: 0 18px; }
+@media (max-width: 640px){
+  .container{ padding:0 18px; }
   .project-grid{ grid-template-columns: 1fr; }
-  .hero{ padding: 48px 0 28px; }
-  .hero h1{ font-size: 32px; }
-  .site-nav{ gap: 10px; }
-  .site-nav a{ padding: 10px 6px; }
+  .hero{ padding:48px 0 28px; }
+  .hero h1{ font-size:32px; }
+  .site-nav{ gap:10px; }
+  .site-nav a{ padding:10px 8px; }
+  .project-gallery--two,
+  .project-gallery--three{ grid-template-columns: 1fr; }
 }
