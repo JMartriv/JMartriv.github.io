@@ -440,3 +440,116 @@ img, video{
   height: 100% !important;
   object-fit: cover !important;
 }
+/* =========================================
+   POLISH PATCH — paste at bottom of style.css
+   ========================================= */
+
+/* --- Header: make it feel intentional, not floating --- */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(245,245,245,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+}
+
+/* Replace monogram vibe with name (clean + hire-friendly) */
+.site-logo{
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #111;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Nav feels “distant” mainly because it has no visual rhythm */
+.site-nav{
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.site-nav a{
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav a:hover{
+  border-bottom-color: #333;
+}
+
+/* --- Hero hierarchy: tone down the “too bold / too big” headline --- */
+.hero{
+  padding: 3.25rem 0 2.25rem;
+}
+
+.hero-text h1{
+  font-size: clamp(2.0rem, 3.2vw, 2.6rem);
+  line-height: 1.06;
+  font-weight: 650;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-text h2{
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #444;
+  margin: 0 0 0.75rem;
+}
+
+.hero-text p{
+  max-width: 52ch;
+  font-size: 0.98rem;
+  color: #555;
+  margin: 0;
+}
+
+/* --- Lightbox zoom: stop it from swallowing the whole screen --- */
+.lightbox{
+  padding: 24px; /* gives breathing room so close button isn’t on the edge */
+}
+
+.lightbox-img{
+  max-width: min(920px, 92vw);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.22);
+  background: #fff; /* prevents ugly gray if transparent PNG */
+}
+
+.lightbox-close{
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+  font-size: 26px;
+  line-height: 0;
+}
+
+/* --- Safety: if any project image tries to go “Titan mode”, clamp it --- */
+.project-image{
+  max-height: 70vh;
+  object-fit: contain;
+}
