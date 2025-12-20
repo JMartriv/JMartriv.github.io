@@ -61,47 +61,17 @@ img, video{
   min-height:72px;
 }
 
-/* Monogram bigger */
-.site-logo{
-  text-decoration:none;
-  color:inherit;
-  display:inline-flex;
-  align-items:center;
+/* === Wordmark logo (replaces monogram) === */
+.wordmark{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
-.monogram{
-  width:52px;
-  height:52px;
-  border:1px solid rgba(0,0,0,.12);
-  border-radius:16px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-  font-size:15px;
-  letter-spacing:.12em;
-}
+/* If monogram styles still exist, make sure they don’t affect layout */
+.monogram{ display:none; }
 
-.site-nav{
-  display:flex;
-  gap:12px;
-}
-
-.site-nav a{
-  text-decoration:none;
-  color:inherit;
-  font-size:13px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  opacity:.75;
-  padding:10px 10px;
-  border-radius:12px;
-}
-
-.site-nav a:hover{
-  opacity:1;
-  background:rgba(0,0,0,.04);
-}
 
 /* ==========================
    HERO (LANDING PAGE)
