@@ -205,6 +205,8 @@ img, video{
   text-decoration:none;
   color:inherit;
   display:block;
+  max-width: 900px;   /* controls how wide the card feels */
+  margin: 0 auto;     /* center it */
 }
 
 .project-media{
