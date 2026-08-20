@@ -1,0 +1,28 @@
+MYTHOS BOOK STORE
+ONLINE RETAIL BOOK STORE
+Project Overview
+Mythos Book Store is a conceptual online retail platform dedicated exclusively to weird fiction spanning horror, fantasy, sci-fi, and the uncanny. The objective of this project was to design an immersive digital storefront that reflects the atmospheric depth and symbolic richness of the genre itself.
+
+Rather than relying on conventional e-commerce aesthetics, the visual system embraces high-contrast palettes, mythological motifs, and stylized illustration to create a cohesive narrative environment.
+
+The interface balances mood and usability, ensuring that while the experience feels immersive and thematic, navigation and product discovery remain intuitive and structured.
+
+The result is a fully realized UI concept that merges brand identity with digital functionality, positioning Mythos as a curated destination rather than a generic online bookstore.
+Scope
+Web Design + E-Commerce UI System Design
+Deliverables
+UI/UX Concept Design and Digital Retail Experience System
+Tools
+Adobe Illustrator, XD, Figma
+My Contributions
+Developed the visual direction for a genre-specific online bookstore.
+
+Designed high-fidelity UI mockups for homepage and secondary pages.
+
+Created a cohesive iconography and illustration system inspired by mythological and cosmic symbolism.
+
+Established a dark-mode interface with high-contrast accent colors to enhance thematic immersion while preserving readability.
+
+Structured layout grids optimized for product browsing, category navigation, and user flow clarity.
+
+Designed wireframes adaptable for future development.
