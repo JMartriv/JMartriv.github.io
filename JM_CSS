@@ -1,0 +1,299 @@
+/* ---------- RESET / BASE ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+h1, h2, h3, .hero-content, .nav-links, .footer-tagline, .footer-copyright {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ---------- NAV / HERO ---------- */
+.hero {
+  min-height: 100vh;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+/* the pill starts as a small circle and animates outward on load */
+.nav-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 54px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  animation: expandPill 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.4s forwards;
+}
+
+@keyframes expandPill {
+  from {
+    width: 54px;
+  }
+  to {
+    width: 420px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  animation: fadeInLinks 0.5s ease forwards;
+  animation-delay: 1.1s; /* starts after the pill finishes expanding */
+}
+
+.nav-links a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  transform: scale(1.08);
+}
+
+@keyframes fadeInLinks {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- HERO CONTENT ---------- */
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(64px, 12vw, 140px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-role {
+  margin-top: 6px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---------- PROJECT GRID ---------- */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* dim to 50% opacity on hover */
+.project-tile:hover img {
+  opacity: 0.5;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-tile:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 3.4vw, 44px);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
+}
+
+.project-cta {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  transform: translateY(10px);
+  transition: transform 0.4s ease 0.05s;
+}
+
+.project-tile:hover .project-title,
+.project-tile:hover .project-cta {
+  transform: translateY(0);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: #0d0d0d;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 60px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-tagline {
+  font-size: clamp(26px, 3.4vw, 42px);
+  font-weight: 500;
+  max-width: 480px;
+  line-height: 1.15;
+}
+
+.footer-subtext {
+  margin-top: 16px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.25s ease;
+}
+
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 700px) {
+  .footer-inner { flex-direction: column; }
+  .footer-right { text-align: left; }
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+  @keyframes expandPill {
+    from { width: 54px; }
+    to   { width: 340px; }
+  }
+  .nav-links { gap: 24px; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  @keyframes expandPill {
+    from { width: 54px; }
+    to   { width: calc(100vw - 48px); }
+  }
+  .nav {
+    top: 20px;
+    width: calc(100% - 40px);
+  }
+  .nav-pill { width: 54px; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 13px; }
+
+  .hero-content h1 { font-size: 72px; }
+  .hero-subtitle { font-size: 14px; letter-spacing: 2px; }
+
+  .footer { padding: 64px 20px; }
+  .footer-links { gap: 20px; flex-wrap: wrap; }
+}
