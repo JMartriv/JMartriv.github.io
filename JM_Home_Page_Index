@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshua Martinez — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO / NAV -->
+  <header class="hero" style="background-image: url('Home_Hero_Portfolio_Assets/Hero_Image.jpg');">
+    <nav class="nav" id="nav">
+      <div class="nav-pill" id="navPill">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>JM</h1>
+      <p class="hero-subtitle">Joshua Martinez</p>
+      <p class="hero-role">Graphic Designer</p>
+    </div>
+  </header>
+
+  <!-- PROJECT GRID -->
+  <main class="project-grid" id="work">
+
+    <a href="project-triton.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Triton_Home_Thumbnail.jpg" alt="Triton Energy">
+      <div class="project-overlay">
+        <span class="project-title">Triton Energy</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+    <a href="project-testudo.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Testudo_Home_Thumbnail.jpg" alt="Testudo Defense Solution">
+      <div class="project-overlay">
+        <span class="project-title">Testudo Defense Solution</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+    <a href="project-mythos.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Mythos-Home_Thumbnail.jpg" alt="Mythos Book Store">
+      <div class="project-overlay">
+        <span class="project-title">Mythos Book Store</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+    <a href="project-idron.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Idron_Home_Thumbnail.jpg" alt="Idron Electrical Solutions Corp">
+      <div class="project-overlay">
+        <span class="project-title">Idron Electrical Solutions</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+    <a href="project-eldritch.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Eldritch_Home_Thumbnail.jpg" alt="Eldritch Studios">
+      <div class="project-overlay">
+        <span class="project-title">Eldritch Studios</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+    <a href="project-boruken.html" class="project-tile">
+      <img src="Home_Hero_Portfolio_Assets/Boruken_Home_Thumbnail.jpg" alt="Boruken Catering">
+      <div class="project-overlay">
+        <span class="project-title">Boruken Catering</span>
+        <span class="project-cta">Click to view</span>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background-image: url('Home_Footer_Portfolio_Assets/Footer_%20Image.png');">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-tagline">Let's make something memorable.</p>
+        <p class="footer-subtext">Available for select design collaborations.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="https://www.behance.net/JoshuaMR95" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/behance.png" alt="" class="footer-icon">Behance — JoshuaMR95</a></li>
+          <li><a href="https://www.linkedin.com/in/joshua-martinez" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/linkedin.png" alt="" class="footer-icon">LinkedIn — Joshua Martinez</a></li>
+          <li><a href="mailto:joshuadavid0119@gmail.com"><img src="Home_Footer_Portfolio_Assets/gmail.png" alt="" class="footer-icon">joshuadavid0119@gmail.com</a></li>
+        </ul>
+        <p class="footer-copyright">© 2026 Joshua Martinez</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
