@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testudo Defense Solution — Joshua Martinez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="subpage.css">
+</head>
+<body class="page-project">
+
+  <!-- SECONDARY NAV -->
+  <header class="sub-nav">
+    <a href="index.htm" class="sub-nav-logo">
+      <img src="JM_Portfolio_%20Assets/JM%20Logo.svg" alt="JM">
+    </a>
+  </header>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <h1 class="project-hero-title">Testudo Defense Solution</h1>
+    <p class="project-hero-tagline">Non-Lethal Defense Branding</p>
+  </section>
+
+  <!-- PROJECT OVERVIEW / CONTRIBUTIONS -->
+  <section class="project-body">
+    <div>
+      <h2>Project Overview</h2>
+      <p>Testudo is a defense-focused brand identity concept built around the principle of collective protection and structural discipline. The identity draws its conceptual foundation from the Roman testudo formation, a tactical shield arrangement designed to prioritize cohesion, resilience, and unified movement under pressure. Rather than relying on overt aggression or militaristic clichés, the brand system emphasizes order, restraint, and stability.</p>
+      <p>The visual language translates the idea of protection through structure: strong geometry, controlled proportions, and deliberate spacing that communicate reliability and authority. The identity was designed to function beyond surface-level branding, extending into applied defense environments such as equipment labeling, facility signage, and operational assets. The result is a cohesive system that reflects defense as a function of discipline and coordination, not spectacle.</p>
+    </div>
+    <div>
+      <h2>My Contributions</h2>
+      <p>Developed the complete brand identity system for Testudo, establishing a visual language rooted in defense, structure, and restraint rather than aggression or militaristic clichés.</p>
+      <p>Designed the logo system and core visual assets, informed by the concept of the testudo formation as a symbol of coordinated protection and reliability.</p>
+      <p>Defined typography, color palette, and layout rules to ensure clarity, legibility, and consistency across both public-facing and operational environments.</p>
+      <p>Created real-world mockups demonstrating the brand's application across signage, business stationery, uniforms, app iconography, and equipment transport containers.</p>
+      <p>Explored brand performance on uneven surfaces and industrial materials, ensuring the identity remains functional and recognizable in practical deployment scenarios.</p>
+      <p>Developed visual rationale and brand storytelling to communicate Testudo's non-lethal, defensive positioning through form, structure, and application rather than explicit messaging.</p>
+    </div>
+  </section>
+
+  <!-- SCOPE / DELIVERABLES / TOOLS -->
+  <section class="project-meta">
+    <div class="project-meta-block">
+      <h3>Scope</h3>
+      <p>Brand Identity + Applied Visual Design + Non-Lethal Defense Brand Development</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Deliverables</h3>
+      <p>Logo System, Color & Typography, Building Signage, Stationery, Uniform, and Uneven-Surface Mockups</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Tools</h3>
+      <p>Adobe Illustrator, InDesign, Photoshop</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="project-gallery">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port1.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port2.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port3.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port4.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port5.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port6.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port7.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port8.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port9.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port10.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port11.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port12.jpg" alt="Testudo Defense Solution">
+    <img src="Testudo_Portfolio_Assets/Testudo%20Port13.jpg" alt="Testudo Defense Solution">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background-image: url('Home_Footer_Portfolio_Assets/Footer_%20Image.png');">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-tagline">Let's make something memorable.</p>
+        <p class="footer-subtext">Available for select design collaborations.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="https://www.behance.net/JoshuaMR95" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/behance.png" alt="" class="footer-icon">Behance — JoshuaMR95</a></li>
+          <li><a href="https://www.linkedin.com/in/joshua-martinez-8488771a2" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/linkedin.png" alt="" class="footer-icon">LinkedIn — Joshua Martinez</a></li>
+          <li><a href="mailto:joshuadavid0119@gmail.com"><img src="Home_Footer_Portfolio_Assets/gmail.png" alt="" class="footer-icon">joshuadavid0119@gmail.com</a></li>
+        </ul>
+        <p class="footer-copyright">© 2026 Joshua Martinez</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
