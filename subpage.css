@@ -126,3 +126,126 @@
   }
 }
 
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.contact-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 220px 8% 140px;
+  background:
+    radial-gradient(ellipse 1100px 600px at 50% -5%, rgba(255, 255, 255, 0.12), transparent 60%),
+    linear-gradient(180deg, #4c4c4c 0%, #262626 42%, #101010 100%);
+}
+
+.contact-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 3.4vw, 46px);
+  line-height: 1.28;
+  color: #fff;
+  max-width: 700px;
+  margin-bottom: 56px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 720px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-field {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-field-full {
+  flex: 1 1 100%;
+}
+
+.contact-field label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-field input,
+.contact-field textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.contact-field textarea {
+  min-height: 160px;
+  resize: vertical;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 16px 42px;
+  background: #fff;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-submit:hover {
+  background: #e2e2e2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .contact-main {
+    padding: 180px 8% 100px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .contact-row .contact-field {
+    flex-basis: auto;
+  }
+}
