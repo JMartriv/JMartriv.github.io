@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idron Electrical Solutions — Joshua Martinez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="subpage.css">
+</head>
+<body class="page-project">
+
+  <!-- SECONDARY NAV -->
+  <header class="sub-nav">
+    <a href="index.htm" class="sub-nav-logo">
+      <img src="JM_Portfolio_%20Assets/JM%20Logo.svg" alt="JM">
+    </a>
+  </header>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <h1 class="project-hero-title">Idron Electrical Solutions</h1>
+    <p class="project-hero-tagline">Electrician Service Branding</p>
+  </section>
+
+  <!-- PROJECT OVERVIEW / CONTRIBUTIONS -->
+  <section class="project-body">
+    <div>
+      <h2>Project Overview</h2>
+      <p>Idron Electrical Solutions is a multifaceted electrical contractor serving residential, commercial, and industrial clients throughout South Florida. The company provides a wide range of services including new installations, infrastructure work, maintenance, inspections, and system upgrades.</p>
+      <p>The goal of this project was to establish a clear, professional brand identity that communicates reliability, technical competence, and trust without unnecessary ornamentation. The visual system prioritizes clarity and legibility, reflecting the realities of electrical work where safety, precision, and compliance are critical. The resulting identity positions Idron Electrical Solutions as a dependable, knowledgeable partner for property owners, businesses, and industrial operations alike.</p>
+    </div>
+    <div>
+      <h2>My Contributions</h2>
+      <p>Developed a straightforward brand identity focused on clarity, professionalism, and real-world usability.</p>
+      <p>Defined a typographic system optimized for legibility across signage, documentation, and digital applications.</p>
+      <p>Established a restrained color palette that reinforces trust, safety, and technical reliability.</p>
+      <p>Designed branded materials suitable for both field and client-facing use, including stationery and service applications.</p>
+      <p>Ensured the identity scales consistently across residential, commercial, and industrial contexts.</p>
+    </div>
+  </section>
+
+  <!-- SCOPE / DELIVERABLES / TOOLS -->
+  <section class="project-meta">
+    <div class="project-meta-block">
+      <h3>Scope</h3>
+      <p>Brand Identity Design + Practical Application System</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Deliverables</h3>
+      <p>Logo System, Color Palette & Typography, Business Stationery, Service & Documentation Applications, Uniform & Equipment Assets</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Tools</h3>
+      <p>Adobe Illustrator, InDesign, Photoshop</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="project-gallery">
+    <img src="Idron_Portfolio_Assets/Idron%20port1.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port2.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port3.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port4.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port5.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port6.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port7.jpg" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port8.png" alt="Idron Electrical Solutions">
+    <img src="Idron_Portfolio_Assets/Idron%20port9.jpg" alt="Idron Electrical Solutions">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background-image: url('Home_Footer_Portfolio_Assets/Footer_%20Image.png');">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-tagline">Let's make something memorable.</p>
+        <p class="footer-subtext">Available for select design collaborations.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="https://www.behance.net/JoshuaMR95" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/behance.png" alt="" class="footer-icon">Behance — JoshuaMR95</a></li>
+          <li><a href="https://www.linkedin.com/in/joshua-martinez-8488771a2" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/linkedin.png" alt="" class="footer-icon">LinkedIn — Joshua Martinez</a></li>
+          <li><a href="mailto:joshuadavid0119@gmail.com"><img src="Home_Footer_Portfolio_Assets/gmail.png" alt="" class="footer-icon">joshuadavid0119@gmail.com</a></li>
+        </ul>
+        <p class="footer-copyright">© 2026 Joshua Martinez</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
