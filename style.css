@@ -168,9 +168,10 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
-  max-width: 1200px;
+  width: 92%;
+  max-width: 1700px;
   margin: 0 auto;
-  padding: 120px 50px;
+  padding: 120px 0;
   background: #0a0a0a;
 }
 
@@ -243,7 +244,8 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: 1fr;
-    padding: 90px 30px;
+    width: 90%;
+    padding: 90px 0;
     gap: 24px;
   }
 }
@@ -370,4 +372,3 @@ ul { list-style: none; }
 
   .back-to-top { right: 18px; bottom: 18px; width: 42px; height: 42px; }
 }
-
