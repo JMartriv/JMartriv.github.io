@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boruken Catering — Joshua Martinez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="subpage.css">
+</head>
+<body class="page-project">
+
+  <!-- SECONDARY NAV -->
+  <header class="sub-nav">
+    <a href="index.htm" class="sub-nav-logo">
+      <img src="JM_Portfolio_%20Assets/JM%20Logo.svg" alt="JM">
+    </a>
+  </header>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <h1 class="project-hero-title">Boruken Catering</h1>
+    <p class="project-hero-tagline">Food Delivery Service Stationery</p>
+  </section>
+
+  <!-- PROJECT OVERVIEW / CONTRIBUTIONS -->
+  <section class="project-body">
+    <div>
+      <h2>Project Overview</h2>
+      <p>Boruken Catering is a family-owned Puerto Rican catering business serving the South Florida community. The client requested a visual identity that felt warm, welcoming, and culturally rooted, something that honored tradition while remaining polished and professional.</p>
+      <p>The objective was to develop a stationery and menu system that reflected the authenticity of home-style Puerto Rican cuisine. Earth-toned color palettes, cultural sun motifs, and balanced typography were used to evoke heritage and hospitality without overwhelming clarity. The final design system supports both emotional connection and functional usability, ensuring menus and printed materials feel personal, inviting, and cohesive across all customer touchpoints.</p>
+    </div>
+    <div>
+      <h2>My Contributions</h2>
+      <p>Developed a warm, culturally-rooted visual identity balancing tradition with polished, professional presentation.</p>
+      <p>Designed an earth-toned color palette and cultural sun motifs to evoke heritage and hospitality.</p>
+      <p>Built a stationery and menu layout system supporting both emotional connection and everyday usability.</p>
+      <p>Ensured consistency and clarity across all printed customer touchpoints, from menus to packaging labels.</p>
+    </div>
+  </section>
+
+  <!-- SCOPE / DELIVERABLES / TOOLS -->
+  <section class="project-meta">
+    <div class="project-meta-block">
+      <h3>Scope</h3>
+      <p>Stationery Design and Menu Layout System</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Deliverables</h3>
+      <p>Trifold Brochure Front and Back Design, Label Stickers, Menu Design</p>
+    </div>
+    <div class="project-meta-block">
+      <h3>Tools</h3>
+      <p>Adobe Illustrator, InDesign, Photoshop</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="project-gallery">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port1.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port2.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port3.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port4.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port5.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port6.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port7.jpg" alt="Boruken Catering">
+    <img src="Boruken_Portfolio_Assets/Boruken%20port8.jpg" alt="Boruken Catering">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background-image: url('Home_Footer_Portfolio_Assets/Footer_%20Image.png');">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-tagline">Let's make something memorable.</p>
+        <p class="footer-subtext">Available for select design collaborations.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="https://www.behance.net/JoshuaMR95" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/behance.png" alt="" class="footer-icon">Behance — JoshuaMR95</a></li>
+          <li><a href="https://www.linkedin.com/in/joshua-martinez-8488771a2" target="_blank" rel="noopener"><img src="Home_Footer_Portfolio_Assets/linkedin.png" alt="" class="footer-icon">LinkedIn — Joshua Martinez</a></li>
+          <li><a href="mailto:joshuadavid0119@gmail.com"><img src="Home_Footer_Portfolio_Assets/gmail.png" alt="" class="footer-icon">joshuadavid0119@gmail.com</a></li>
+        </ul>
+        <p class="footer-copyright">© 2026 Joshua Martinez</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
