@@ -1,1 +1,127 @@
+/* ============================================================
+   SUBPAGE NAV
+   Full-width black bar with a circular monochrome-logo badge
+   straddling the bottom edge / accent line.
+   ============================================================ */
+.sub-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+  border-bottom: 3px solid #4f8ba3;
+  z-index: 100;
+}
 
+.sub-nav-logo {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 112px;
+  border-radius: 999px;
+  background: #0a0a0a;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s ease;
+}
+
+.sub-nav-logo:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.sub-nav-logo img {
+  width: 52px;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+.about-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 220px 8% 120px;
+  background:
+    radial-gradient(ellipse 1100px 600px at 50% -5%, rgba(255, 255, 255, 0.12), transparent 60%),
+    linear-gradient(180deg, #4c4c4c 0%, #262626 42%, #101010 100%);
+}
+
+.about-text {
+  max-width: 500px;
+  flex: 1 1 420px;
+}
+
+.about-kicker {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 26px;
+}
+
+.about-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1.22;
+  color: #fff;
+  margin-bottom: 34px;
+}
+
+.about-body {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 460px;
+}
+
+.about-body + .about-body {
+  margin-top: 26px;
+}
+
+.about-photo {
+  flex: 0 1 420px;
+  max-width: 420px;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55), 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+  .about-main {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    text-align: left;
+    gap: 48px;
+    padding: 180px 8% 100px;
+  }
+
+  .about-text,
+  .about-photo {
+    max-width: 100%;
+    flex: none;
+  }
+}
